@@ -28,7 +28,7 @@ export class Home extends Component<Props> {
   render() {
     const {pages} = this.state;
     return (
-      <View>
+      <View style={{flex: 1}}>
         <Header headerTitle={'Home'} />
         <FlatList
           data={pages}
