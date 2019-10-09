@@ -5,7 +5,7 @@ type Props = {};
 import crashlytics from '@react-native-firebase/crashlytics';
 
 export class CrashLatics extends Component<Props> {
-  constructor(Props) {
+  constructor(props) {
     super(props);
     this.state = {
       inputText: '',
