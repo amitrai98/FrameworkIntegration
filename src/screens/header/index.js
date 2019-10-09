@@ -7,7 +7,7 @@ const Header = props => {
     <View
       style={{
         backgroundColor: 'gray',
-        height: '30%',
+        height: '10%',
         paddingVertical: 10,
         paddingHorizontal: 2,
       }}>
