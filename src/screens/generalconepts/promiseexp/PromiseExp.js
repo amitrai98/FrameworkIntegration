@@ -7,7 +7,9 @@ type Props = {};
 export class PromiseExp extends Component<Props> {
   showPromiseExampe() {
     const calculateSum = new Promise((resolve, reject) => {
-      resolve('sum is 10');
+      setTimeout(() => {
+        resolve('fetching config api in 1 sec');
+      }, 1000);
     });
 
     calculateSum
@@ -17,6 +19,10 @@ export class PromiseExp extends Component<Props> {
       .catch(error => {
         alert(`error is ${error}`);
       });
+  }
+
+  testMe(num) {
+    return num * 2;
   }
 
   showAsyncExample() {

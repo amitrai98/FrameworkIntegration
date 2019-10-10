@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generalconcepts 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "gray",
+        "height": "10%",
+        "paddingHorizontal": 2,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "bottom": 0,
+          "paddingVertical": 10,
+          "position": "absolute",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "white",
+          }
+        }
+      >
+        General Concepts
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      Object {
+        "paddingHorizontal": 20,
+        "paddingVertical": 11,
+      }
+    }
+  >
+    Example of general Concepts
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "margin": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "margin": 10,
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "backgroundColor": "red",
+              "color": "white",
+              "paddingHorizontal": 20,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          initiate promise
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "marginTop": 10,
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "backgroundColor": "red",
+              "color": "white",
+              "paddingHorizontal": 20,
+              "paddingVertical": 10,
+            }
+          }
+        >
+          initiate async await
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

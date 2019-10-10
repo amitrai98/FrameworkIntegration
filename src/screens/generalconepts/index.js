@@ -12,7 +12,7 @@ export class GeneralConcepts extends Component<Props> {
         <Text
           style={{
             paddingHorizontal: 20,
-            paddingVertical: 10,
+            paddingVertical: 11,
           }}>
           Example of general Concepts
         </Text>
