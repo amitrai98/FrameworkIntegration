@@ -9,20 +9,15 @@ export class GeneralConcepts extends Component<Props> {
     return (
       <View style={{flex: 1}}>
         <Header headerTitle={'General Concepts'} />
-        <View style={{alignItems: 'center', margin: 10}}>
-          <TouchableOpacity>
-            <Text
-              style={{
-                alignSelf: 'center',
-                paddingHorizontal: 20,
-                paddingVertical: 10,
-                backgroundColor: 'green',
-                color: 'white',
-              }}>
-              promise example
-            </Text>
-            <PromiseExp />
-          </TouchableOpacity>
+        <Text
+          style={{
+            paddingHorizontal: 20,
+            paddingVertical: 10,
+          }}>
+          Example of general Concepts
+        </Text>
+        <View style={{alignItems: 'center', margin: 10, flex: 1}}>
+          <PromiseExp />
         </View>
       </View>
     );

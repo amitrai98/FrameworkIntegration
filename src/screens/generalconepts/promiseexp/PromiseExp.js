@@ -12,17 +12,40 @@ export class PromiseExp extends Component<Props> {
 
     calculateSum
       .then(response => {
-        console.log(`response from promise is ${response} ${Config.API_URL}`);
+        alert(`response from promise is ${response} ${Config.API_URL}`);
       })
       .catch(error => {
-        console.log('error is ');
+        alert(`error is ${error}`);
       });
+  }
+
+  showAsyncExample() {
+    const asyncData = async () => {
+      try {
+        let promise = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve('data after 1 sec');
+          }, 1000);
+        });
+
+        let result = await promise;
+        alert(`respons is ${result}`);
+      } catch (error) {
+        alert(`some error ${error}`);
+      }
+    };
+
+    asyncData();
+
+    // asyncData
+    //   .then(result => alert(`respons is ${result}`))
+    //   .catch(error => alert(`some error ${error}`));
   }
 
   render() {
     return (
       <View style={{flex: 1, margin: 10}}>
-        <TouchableOpacity onPress={this.showPromiseExampe()}>
+        <TouchableOpacity onPress={() => this.showPromiseExampe()}>
           <Text
             style={{
               backgroundColor: 'red',
@@ -31,6 +54,20 @@ export class PromiseExp extends Component<Props> {
               paddingHorizontal: 20,
             }}>
             initiate promise
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{marginTop: 10}}
+          onPress={() => this.showAsyncExample()}>
+          <Text
+            style={{
+              backgroundColor: 'red',
+              color: 'white',
+              paddingVertical: 10,
+              paddingHorizontal: 20,
+            }}>
+            initiate async await
           </Text>
         </TouchableOpacity>
       </View>
