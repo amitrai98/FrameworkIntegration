@@ -37,6 +37,9 @@ target 'FrameworksIntegration' do
   pod 'RNFBCrashlytics', :path => '../node_modules/@react-native-firebase/crashlytics'
   pod 'Fabric'
   pod 'Crashlytics'
+  
+ 
+
   target 'FrameworksIntegrationTests' do
     inherit! :search_paths
     # Pods for testing
@@ -45,12 +48,12 @@ target 'FrameworksIntegration' do
   use_native_modules!
 end
 
-target 'FrameworksIntegration-tvOS' do
-  # Pods for FrameworksIntegration-tvOS
+# target 'FrameworksIntegration-tvOS' do
+#   # Pods for FrameworksIntegration-tvOS
 
-  target 'FrameworksIntegration-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+#   target 'FrameworksIntegration-tvOSTests' do
+#     inherit! :search_paths
+#     # Pods for testing
+#   end
 
-end
+# end

@@ -12,17 +12,16 @@ export class Home extends Component<Props> {
   constructor(props) {
     super(props);
     this.state = {
-      pages: [{id: 1, pageName: 'CrashLatics'}],
+      pages: [
+        {id: 1, pageName: 'crashlatics'},
+        {id: 2, pageName: 'GeneralConcepts'},
+      ],
     };
   }
 
   onItemClick(item) {
     const {navigation} = this.props;
-    switch (item.id) {
-      case 1: {
-        navigation.navigate('crashlatics');
-      }
-    }
+    navigation.navigate(item.pageName);
   }
 
   render() {
