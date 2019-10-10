@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
+import Config from 'react-native-config';
 
 type Props = {};
 
@@ -11,7 +12,7 @@ export class PromiseExp extends Component<Props> {
 
     calculateSum
       .then(response => {
-        console.log(`response from promise is ${response}`);
+        console.log(`response from promise is ${response} ${Config.API_URL}`);
       })
       .catch(error => {
         console.log('error is ');
